@@ -5,12 +5,12 @@
     <div class="container">
         <div class="header-bottom py-5 d-flex justify-content-between aling-items-center">
             <div class="logo">
-                <img class="img-fluid" width=75 src="{{ asset('images/dc-logo.png') }}" alt="DC Comics">
+                <a href="{{ route('home') }}"><img class="img-fluid" width=75 src="{{ asset('images/dc-logo.png') }}" alt="DC Comics"></a>
             </div>
             <div class="header-links">
                 <ul class="d-flex">
                     <li><a href="#">Characters</a></li>
-                    <li><a href="#">Comics</a></li>
+                    <li><a href="{{route('comics.index')}}">Comics</a></li>
                     <li><a href="#">Movies</a></li>
                     <li><a href="#">Tv</a></li>
                     <li><a href="#">Games</a></li>

@@ -3,5 +3,7 @@
 @section('title', 'Home Page')
 
 @section('content')
-    {{-- <div class="bg-primary h-100">Prova</div> --}}
+    <div class="bg-yellow d-flex justify-content-center align-items-center">
+        <h1>Home</h1>
+    </div>
 @endsection
