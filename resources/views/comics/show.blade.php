@@ -3,7 +3,9 @@
 @section('title',  $comic->title)
 
 @section('content')
-<section id="comic" class="my-5">
+<div class="container"><a class="btn btn-secondary mt-3" href="{{ url()->previous() }}">Indietro</a></div>
+<section id="comic" class="my-5 d-flex justify-content-center">
+   
     <div class="card-container d-flex justify-content-center">
         <div class="card mx-5" style="width: 18rem;">
             <img src="{{$comic->link_img}}" class="card-img-top" alt="{{$comic->title}}">
@@ -11,9 +13,10 @@
                 <h2 class="card-title">{{$comic->title}}</h2>
             <p class="card-text">{{$comic->description}}</p>
             </div>
+    <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-warning">Edit</a>
+
         </div>
     </div>
-    <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-primary">Edit a comic</a>
 </section>
 
 @endsection

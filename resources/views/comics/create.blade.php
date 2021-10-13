@@ -4,6 +4,7 @@
 
 @section('content')
     <section id="create-comic" class="my-5">
+        <div class="container"><a class="btn btn-secondary" href="{{ url()->previous() }}">Indietro</a></div>
         <div class="container">
             <h1>Create your Comic!!</h1>
             <form method="POST" action="{{ route('comics.store') }}">

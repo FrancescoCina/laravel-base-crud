@@ -4,7 +4,10 @@
 
 @section('content')
     <section id="comics" class="my-5">
+        <div class="container mb-5"><a href="{{ route('comics.create') }}" class="btn btn-primary" id="creation-button">Create a new comic</a></div>
         <div class="card-container d-flex justify-content-center">
+        
+
             @foreach ($comics as $comic)     
             <div class="card mx-5" style="width: 18rem;">
                 <img src="{{$comic->link_img}}" class="card-img-top" alt="{{$comic->title}}">
@@ -12,12 +15,14 @@
                     <h2 class="card-title">{{$comic->title}}</h2>
                 <p class="card-text">{{$comic->description}}</p>
                 </div>
-                <button class="btn btn-main-color"><a href="{{route('comics.show', $comic->id)}}">Dettagli</a></button>
+                <button class="btn btn-main-color"><a href="{{route('comics.show', $comic->id)}}">Details</a></button>
+                <button class="btn btn-warning"><a href="{{ route('comics.edit', $comic->id) }}" >Edit</a></button>
+            
             </div>
             @endforeach
         </div>
 
-        <a href="{{ route('comics.create') }}" class="btn btn-primary">Create a new comic</a>
+      
         
 
 
