@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
- @section('title', '\ics')
+ @section('title', 'Comics')
 
 @section('content')
     <section id="comics" class="my-5">
@@ -16,6 +16,9 @@
             </div>
             @endforeach
         </div>
+
+        <a href="{{ route('comics.create') }}" class="btn btn-primary">Create a new comic</a>
+
     </section>
 @endsection
 
