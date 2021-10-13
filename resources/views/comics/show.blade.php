@@ -15,7 +15,7 @@
             </div>
     <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-warning">Edit</a>
 
-        </div>
+        </di>
     </div>
 </section>
 
