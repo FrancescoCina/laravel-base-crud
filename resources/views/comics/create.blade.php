@@ -31,7 +31,7 @@
                 <div class="form-floating">
                     <textarea class="form-control" id="description" name="description"></textarea>
                   </div>
-                <button type="submit" class="my-3 btn btn-primary">Crea</button>
+                <button type="submit" class="my-3 btn btn-primary">Create</button>
               </form>
         </div>
     </section>

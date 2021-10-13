@@ -13,6 +13,7 @@
             </div>
         </div>
     </div>
+    <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-primary">Edit a comic</a>
 </section>
 
 @endsection

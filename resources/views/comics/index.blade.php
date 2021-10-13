@@ -18,6 +18,8 @@
         </div>
 
         <a href="{{ route('comics.create') }}" class="btn btn-primary">Create a new comic</a>
+        
+
 
     </section>
 @endsection
