@@ -15,8 +15,8 @@
                     <h2 class="card-title">{{$comic->title}}</h2>
                 <p class="card-text">{{$comic->description}}</p>
                 </div>
-                <button class="btn btn-main-color"><a href="{{route('comics.show', $comic->id)}}">Details</a></button>
-                <button class="btn btn-warning"><a href="{{ route('comics.edit', $comic->id) }}" >Edit</a></button>
+                <a class="btn btn-main-color" href="{{route('comics.show', $comic->id)}}">Details</a>
+                                    <a class="btn btn-warning" href="{{ route('comics.edit', $comic->id) }}" >Edit</a>
             
             </div>
             @endforeach
