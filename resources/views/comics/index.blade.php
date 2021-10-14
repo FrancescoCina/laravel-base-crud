@@ -18,7 +18,7 @@
         </div>
 
         <div class="container mb-5">
-            <a class="text-black btn btn-outline-secondary" href="{{ route('comics.trash') }}">Vai al cestino</a>
+            <a class="text-black btn btn-outline-secondary" href="{{ route('comics.trash') }}">Trash bin</a>
         </div>
         
         <div class="card-container d-flex justify-content-center">
