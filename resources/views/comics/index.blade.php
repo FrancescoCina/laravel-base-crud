@@ -5,8 +5,17 @@
 @section('content')
     <section id="comics" class="my-5">
         <div class="container mb-5"><a href="{{ route('comics.create') }}" class="btn btn-primary" id="creation-button">Create a new comic</a></div>
-        <div class="card-container d-flex justify-content-center">
         
+        <div class="container my-3">
+            @if(session('delete'))
+            <div class="alert alert-success" role="alert">
+                Il fumetto: {{ session('delete') }} è stato correttamente eliminato!
+            </div>
+            @endif
+        </div>
+        
+        <div class="card-container d-flex justify-content-center">
+           
 
             @foreach ($comics as $comic)     
             <div class="card mx-5" style="width: 18rem;">
@@ -34,5 +43,3 @@
     </section>
 @endsection
 
-
-{{-- {{route('comics.show')}} --}}

@@ -14,8 +14,14 @@
             <p class="card-text">{{$comic->description}}</p>
             </div>
     <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-warning">Edit</a>
+    <form method="POST" action="{{ route('comics.destroy', $comic->id) }}">
+        @csrf
+        @method('DELETE')
+        <button type="submit" class="w-100 btn btn-danger">Delete</button>
+    </form>
+    
 
-        </di>
+        </div>
     </div>
 </section>
 
