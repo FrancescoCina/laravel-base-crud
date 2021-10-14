@@ -17,7 +17,7 @@
             @endif
         </div>
 
-        <div class="container">
+        <div class="container mb-5">
             <a class="text-black btn btn-outline-secondary" href="{{ route('comics.trash') }}">Vai al cestino</a>
         </div>
         

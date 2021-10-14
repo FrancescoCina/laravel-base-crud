@@ -30,7 +30,8 @@
                   <input type="text" class="form-control" id="type" name="type">
                 </div>
                 <div class="form-floating">
-                    <textarea class="form-control" id="description" name="description"></textarea>
+                  <textarea class="form-control" id="description" name="description"></textarea>
+                  <label for="description">Description</label>
                   </div>
                 <button type="submit" class="my-3 btn btn-primary">Create</button>
               </form>

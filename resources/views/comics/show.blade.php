@@ -3,7 +3,10 @@
 @section('title',  $comic->title)
 
 @section('content')
-<div class="container"><a class="btn btn-secondary mt-3" href="{{ url()->previous() }}">Indietro</a></div>
+<div class="container"><a class="btn btn-secondary mt-3" href="{{ url()->previous() }}">Go back</a></div>
+<div class="container"><a class="btn btn-primary mt-3" href="{{ route('comics.index') }}">All Comics</a></div>
+
+
 <section id="comic" class="my-5 d-flex justify-content-center">
    
     <div class="card-container d-flex justify-content-center">
