@@ -4,8 +4,20 @@
 
 @section('content')
 <section id="create-comic" class="my-5">
-    <div class="container"><a class="btn btn-secondary" href="{{ url()->previous() }}">Indietro</a></div>
-    <div class="container">
+    <div class="container"><a class="btn btn-secondary" href="{{ url()->previous() }}">Indietro</a>
+
+
+    @if($errors->any())
+          <div class="alert alert-danger" role="alert">
+            <ul>
+              @foreach ($errors->all() as $error)       
+              <li>{{$error}}</li>
+              @endforeach
+            </ul>
+          </div>
+          @endif
+
+    
         <h1>Edit your Comic!!</h1>
         <form method="POST" action="{{ route('comics.update', $comic->id) }}">
             @csrf
