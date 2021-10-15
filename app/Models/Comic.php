@@ -22,4 +22,9 @@ class Comic extends Model
     {
         return Carbon::create($this->updated_at)->format('d-m-Y');
     }
+
+    public function getDeletedAt()
+    {
+        return Carbon::create($this->deleted_at)->format('d-m-Y');
+    }
 }
