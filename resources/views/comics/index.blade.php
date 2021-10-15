@@ -30,6 +30,10 @@
                 <div class="card-body">
                     <h2 class="card-title">{{$comic->title}}</h2>
                 <p class="card-text">{{$comic->description}}</p>
+                <hr>
+                <p class="mt-2"><strong> Creato il:</strong> {{ $comic->getCreatedAt() }}</p>
+                <p class="mt-2"> <strong>Modificato il:</strong> {{ $comic->getUpdatedAt() }}</p>
+
                 </div>
                 <a class="btn btn-main-color" href="{{route('comics.show', $comic->id)}}">Details</a>
                 <a class="btn btn-warning" href="{{ route('comics.edit', $comic->id) }}" >Edit</a>
